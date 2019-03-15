@@ -22,3 +22,19 @@ cuRsor.execute(sql_command)
 connection.commit()
 
 connection.close()
+
+
+#We can also fetch data
+
+cuRsor.execute("SELECT * from employee_info")
+
+#The variable 'fetched' stores all the fetched data
+fetched = cuRsor.fetchall()
+
+#for loop to print all fetched data
+
+print(fetched)
+
+connection.commit()
+
+connection.close()
